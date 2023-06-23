@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="GestureRecognizer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Def 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QdY-z5-80n">
+                                <rect key="frame" x="103" y="486" width="208" height="119"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="deftones1" translatesAutoresizingMaskIntoConstraints="NO" id="FLj-fH-3a7">
+                                <rect key="frame" x="67" y="120" width="280" height="384"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="QdY-z5-80n" secondAttribute="bottom" constant="257" id="CLT-BE-7SZ"/>
+                            <constraint firstItem="FLj-fH-3a7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RyV-8l-Dho"/>
+                            <constraint firstItem="FLj-fH-3a7" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="76" id="Ssp-UC-yhi"/>
+                            <constraint firstItem="QdY-z5-80n" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="442" id="aAg-dW-adQ"/>
+                            <constraint firstItem="QdY-z5-80n" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="103" id="j8X-SD-vt8"/>
+                            <constraint firstItem="FLj-fH-3a7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="67" id="jWE-9s-6Xo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="FLj-fH-3a7" secondAttribute="bottom" constant="358" id="tls-sV-AnM"/>
+                            <constraint firstItem="FLj-fH-3a7" firstAttribute="centerX" secondItem="QdY-z5-80n" secondAttribute="centerX" id="uYj-br-Ka9"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imgView" destination="FLj-fH-3a7" id="DBo-JH-KrI"/>
+                        <outlet property="lblLabel" destination="QdY-z5-80n" id="8cv-jJ-yjf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="93.75"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="deftones1" width="1600" height="1600"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
