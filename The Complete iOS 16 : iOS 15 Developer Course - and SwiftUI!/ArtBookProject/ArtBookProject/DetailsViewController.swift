@@ -70,8 +70,47 @@ class DetailsViewController: UIViewController, PHPickerViewControllerDelegate {
         
         if chosenPainting != "" {
             // Core data
-            let stringUUID = chosenPaintingId?.uuidString
-            print(stringUUID)
+            
+            let appDelegate = UIApplication.shared.delegate as! AppDelegate
+            let context = appDelegate.persistentContainer.viewContext
+            
+            let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Paintings")
+            
+            let idString = chosenPaintingId?.uuidString
+            fetchRequest.predicate = NSPredicate(format: "id = %@", idString!)
+            fetchRequest.returnsObjectsAsFaults = false
+            
+            do {
+                let results = try context.fetch(fetchRequest)
+                
+                if results.count > 0 {
+                    
+                    for result in results as! [NSManagedObject] {
+                        
+                        if let name = result.value(forKey: "name") as? String {
+                            self.nameTextField.text = name
+                        }
+                        
+                        if let artist = result.value(forKey: "artist") as? String {
+                            self.artistTextField.text = artist
+                        }
+                        
+                        if let year = result.value(forKey: "year") as? Int {
+                            self.yearTextField.text = String(year)
+                        }
+                        
+                        if let imageData = result.value(forKey: "image") as? Data {
+                            let image = UIImage(data: imageData)
+                            imageView.image = image
+                        }
+                    }
+                        
+                }
+                
+            } catch {
+                print("Error")
+            }
+            
             
         } else {
             nameTextField.text = ""
