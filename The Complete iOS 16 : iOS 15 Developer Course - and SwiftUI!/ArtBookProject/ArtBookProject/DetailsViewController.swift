@@ -16,6 +16,7 @@ class DetailsViewController: UIViewController, PHPickerViewControllerDelegate {
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var artistTextField: UITextField!
     @IBOutlet weak var yearTextField: UITextField!
+    @IBOutlet weak var saveButton: UIButton!
     
     var chosenPainting = ""
     var chosenPaintingId : UUID?
@@ -69,7 +70,12 @@ class DetailsViewController: UIViewController, PHPickerViewControllerDelegate {
         super.viewDidLoad()
         
         if chosenPainting != "" {
+            // User clicked on painting from list
             // Core data
+            
+            saveButton.isHidden = true
+            saveButton.isEnabled = true
+            
             
             let appDelegate = UIApplication.shared.delegate as! AppDelegate
             let context = appDelegate.persistentContainer.viewContext
@@ -113,6 +119,11 @@ class DetailsViewController: UIViewController, PHPickerViewControllerDelegate {
             
             
         } else {
+            // User clicked on plus button
+            
+            saveButton.isHidden = false
+            saveButton.isEnabled = false
+            
             nameTextField.text = ""
             artistTextField.text = ""
             yearTextField.text = ""
@@ -196,6 +207,9 @@ private extension DetailsViewController {
     }
     
     func handleCompletion(assetIdentifier: String, object: Any?, error: Error? = nil) {
+        
+        saveButton.isEnabled = true
+        
         guard currentAssetIdentifier == assetIdentifier else { return }
         if let image = object as? UIImage {
             displayImage(image)
