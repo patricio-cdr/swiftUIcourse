@@ -17,6 +17,9 @@ class DetailsViewController: UIViewController, PHPickerViewControllerDelegate {
     @IBOutlet weak var artistTextField: UITextField!
     @IBOutlet weak var yearTextField: UITextField!
     
+    var chosenPainting = ""
+    var chosenPaintingId : UUID?
+    
     // Class variables
     private var selection = [String: PHPickerResult]()
     private var selectedAssetIdentifiers = [String]()
@@ -64,6 +67,17 @@ class DetailsViewController: UIViewController, PHPickerViewControllerDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if chosenPainting != "" {
+            // Core data
+            let stringUUID = chosenPaintingId?.uuidString
+            print(stringUUID)
+            
+        } else {
+            nameTextField.text = ""
+            artistTextField.text = ""
+            yearTextField.text = ""
+        }
 
         // Recognizers
         
