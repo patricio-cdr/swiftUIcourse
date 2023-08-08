@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="aKq-qL-aBk">
-                                <rect key="frame" x="0.0" y="247" width="414" height="615"/>
+                                <rect key="frame" x="0.0" y="247" width="414" height="541"/>
                             </mapView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VaU-es-2pa">
                                 <rect key="frame" x="66" y="93" width="282" height="34"/>
@@ -29,23 +29,38 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LVT-8U-Kd4">
+                                <rect key="frame" x="159" y="807" width="96" height="39"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="39" id="nXy-HF-Tfb"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Save"/>
+                                <connections>
+                                    <action selector="btnSaveClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gtG-cZ-Yju"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="VaU-es-2pa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1OI-zx-Qyw"/>
-                            <constraint firstItem="VaU-es-2pa" firstAttribute="leading" secondItem="jbp-FD-qgR" secondAttribute="leading" id="3qn-tZ-b7x"/>
-                            <constraint firstItem="aKq-qL-aBk" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="5LV-7E-eYD"/>
-                            <constraint firstItem="VaU-es-2pa" firstAttribute="trailing" secondItem="jbp-FD-qgR" secondAttribute="trailing" id="93Y-Wd-Y0d"/>
-                            <constraint firstItem="aKq-qL-aBk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="GMu-7y-dG4"/>
-                            <constraint firstItem="VaU-es-2pa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="66" id="KLX-pe-Fhq"/>
-                            <constraint firstItem="jbp-FD-qgR" firstAttribute="top" secondItem="VaU-es-2pa" secondAttribute="bottom" constant="19" id="Owp-4D-FLS"/>
-                            <constraint firstItem="aKq-qL-aBk" firstAttribute="top" secondItem="jbp-FD-qgR" secondAttribute="bottom" constant="67" id="cxa-W5-cMb"/>
-                            <constraint firstItem="VaU-es-2pa" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="49" id="e60-3z-v0W"/>
-                            <constraint firstItem="jbp-FD-qgR" firstAttribute="centerX" secondItem="aKq-qL-aBk" secondAttribute="centerX" id="fUK-Wh-mVF"/>
+                            <constraint firstItem="jbp-FD-qgR" firstAttribute="top" secondItem="VaU-es-2pa" secondAttribute="bottom" constant="19" id="15l-om-aLQ"/>
+                            <constraint firstItem="aKq-qL-aBk" firstAttribute="centerX" secondItem="LVT-8U-Kd4" secondAttribute="centerX" id="6zW-VW-UOr"/>
+                            <constraint firstItem="VaU-es-2pa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8Zh-Lh-vCt"/>
+                            <constraint firstItem="VaU-es-2pa" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="49" id="8gg-Nb-hp5"/>
+                            <constraint firstItem="VaU-es-2pa" firstAttribute="leading" secondItem="jbp-FD-qgR" secondAttribute="leading" id="D6s-kx-L21"/>
+                            <constraint firstItem="jbp-FD-qgR" firstAttribute="centerX" secondItem="aKq-qL-aBk" secondAttribute="centerX" id="Jk4-Vh-F0N"/>
+                            <constraint firstItem="VaU-es-2pa" firstAttribute="trailing" secondItem="jbp-FD-qgR" secondAttribute="trailing" id="Jlr-W3-N7Q"/>
+                            <constraint firstItem="LVT-8U-Kd4" firstAttribute="top" secondItem="aKq-qL-aBk" secondAttribute="bottom" constant="19" id="SrE-su-2bc"/>
+                            <constraint firstItem="LVT-8U-Kd4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="159" id="cYM-in-chj"/>
+                            <constraint firstItem="VaU-es-2pa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="66" id="dfI-vJ-Baa"/>
+                            <constraint firstItem="aKq-qL-aBk" firstAttribute="top" secondItem="jbp-FD-qgR" secondAttribute="bottom" constant="67" id="eDE-56-R1h"/>
+                            <constraint firstItem="aKq-qL-aBk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="lQ7-UN-VQq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="LVT-8U-Kd4" secondAttribute="bottom" constant="16" id="zXy-u0-dKz"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="btnSave" destination="LVT-8U-Kd4" id="KiE-am-0o0"/>
                         <outlet property="mapView" destination="aKq-qL-aBk" id="uJP-X7-HgR"/>
                         <outlet property="nameTextField" destination="VaU-es-2pa" id="JHN-Ld-Hts"/>
                         <outlet property="txtNote" destination="jbp-FD-qgR" id="hGe-zu-2V8"/>

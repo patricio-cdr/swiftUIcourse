@@ -8,12 +8,17 @@
 import UIKit
 import MapKit
 import CoreLocation
+import CoreData
 
 class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
     
     @IBOutlet weak var mapView: MKMapView!
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var txtNote: UITextField!
+    @IBOutlet weak var btnSave: UIButton!
+    var chosenLatitude = Double()
+    var chosenLongitude = Double()
+    
     
     
     var locationManager = CLLocationManager()
@@ -37,6 +42,9 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
         if gestureRecognizer.state == .began {
             let touchedPoint = gestureRecognizer.location(in: self.mapView)
             let touchCoordinates = self.mapView.convert(touchedPoint, toCoordinateFrom: self.mapView)
+            
+            chosenLatitude = touchCoordinates.latitude
+            chosenLongitude = touchCoordinates.longitude
             
             let annotation = MKPointAnnotation()
             annotation.coordinate = touchCoordinates
@@ -82,6 +90,28 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
     func enableLocationFeatures() {
         locationManager.startUpdatingLocation()
     }
+    
+    @IBAction func btnSaveClicked(_ sender: Any) {
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        let context = appDelegate.persistentContainer.viewContext
+        
+        let newPlace = NSEntityDescription.insertNewObject(forEntityName: "Places", into: context)
+        
+        newPlace.setValue(nameTextField.text, forKey: "title")
+        newPlace.setValue(txtNote.text, forKey: "subTitle")
+        newPlace.setValue(chosenLatitude, forKey: "latitude")
+        newPlace.setValue(chosenLongitude, forKey: "longitude")
+        newPlace.setValue(UUID(), forKey: "id")
+        
+        do {
+            try context.save()
+            print("success")
+        } catch {
+            print("error")
+        }
+        
+    }
+    
 }
 
 
