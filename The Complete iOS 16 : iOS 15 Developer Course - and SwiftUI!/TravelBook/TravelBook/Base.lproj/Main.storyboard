@@ -62,7 +62,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LVT-8U-Kd4">
-                                <rect key="frame" x="159" y="807" width="96" height="39"/>
+                                <rect key="frame" x="60" y="807" width="294" height="39"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="39" id="nXy-HF-Tfb"/>
                                 </constraints>
@@ -84,7 +84,8 @@
                             <constraint firstItem="jbp-FD-qgR" firstAttribute="centerX" secondItem="aKq-qL-aBk" secondAttribute="centerX" id="Jk4-Vh-F0N"/>
                             <constraint firstItem="VaU-es-2pa" firstAttribute="trailing" secondItem="jbp-FD-qgR" secondAttribute="trailing" id="Jlr-W3-N7Q"/>
                             <constraint firstItem="LVT-8U-Kd4" firstAttribute="top" secondItem="aKq-qL-aBk" secondAttribute="bottom" constant="19" id="SrE-su-2bc"/>
-                            <constraint firstItem="LVT-8U-Kd4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="159" id="cYM-in-chj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="LVT-8U-Kd4" secondAttribute="trailing" constant="60" id="Vmt-io-7bH"/>
+                            <constraint firstItem="LVT-8U-Kd4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="60" id="cYM-in-chj"/>
                             <constraint firstItem="VaU-es-2pa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="66" id="dfI-vJ-Baa"/>
                             <constraint firstItem="aKq-qL-aBk" firstAttribute="top" secondItem="jbp-FD-qgR" secondAttribute="bottom" constant="67" id="eDE-56-R1h"/>
                             <constraint firstItem="aKq-qL-aBk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="lQ7-UN-VQq"/>

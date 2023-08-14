@@ -19,6 +19,8 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
     var chosenLatitude = Double()
     var chosenLongitude = Double()
     
+    var selectedTitle = ""
+    var selectedId : UUID?
     
     
     var locationManager = CLLocationManager()
@@ -36,6 +38,21 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
         let gestureRecognizer = UILongPressGestureRecognizer(target: self, action: #selector(chooseLocation(gestureRecognizer:)))
         gestureRecognizer.minimumPressDuration = 3
         mapView.addGestureRecognizer(gestureRecognizer)
+        
+        let hideKeyboardRecognizer = UITapGestureRecognizer(target: self, action: #selector(hideKeyboard))
+        view.addGestureRecognizer(hideKeyboardRecognizer)
+        
+        if selectedTitle != "" {
+            // CoreData
+            let stringUUID = selectedId?.uuidString
+            print(stringUUID)
+        } else {
+            // Add new data
+        }
+    }
+    
+    @objc func hideKeyboard() {
+        view.endEditing(true)
     }
     
     @objc func chooseLocation(gestureRecognizer: UILongPressGestureRecognizer) {
