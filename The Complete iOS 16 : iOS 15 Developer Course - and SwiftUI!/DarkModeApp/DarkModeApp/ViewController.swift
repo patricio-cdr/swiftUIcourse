@@ -15,10 +15,15 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
+        overrideUserInterfaceStyle = .light
         
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        
+    }
+    
+    override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
         let userInterfaceStyle = traitCollection.userInterfaceStyle
         
         if userInterfaceStyle == .dark {
