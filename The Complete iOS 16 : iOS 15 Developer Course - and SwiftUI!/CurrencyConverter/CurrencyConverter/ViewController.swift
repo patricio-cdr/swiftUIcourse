@@ -48,11 +48,35 @@ class ViewController: UIViewController {
                     // 2) Response & Data
                     if let responseData = data {
                         do {
-                            let jsonResponse = try JSONSerialization.jsonObject(with: responseData, options: JSONSerialization.ReadingOptions.mutableContainers)
+                            // 3) Parsing & JSON Serialization
+                            let jsonResponse = try JSONSerialization.jsonObject(with: responseData, options: JSONSerialization.ReadingOptions.mutableContainers) as! Dictionary<String, Any>
                             
                             // ASYNC
                             DispatchQueue.main.async {
-                                print(jsonResponse)
+                                if let rates = jsonResponse["rates"] as? [String : Any] {
+                                    print(rates)
+                                    
+                                    if let cad = rates["CAD"] as? Double {
+                                        self.lblCAD.text = "CAD: \(cad)"
+                                    }
+                                    if let chf = rates["CHF"] as? Double {
+                                        self.lblCHF.text = "CHF: \(chf)"
+                                    }
+                                    if let gbp = rates["GBP"] as? Double {
+                                        self.lblGBP.text = "GBP: \(gbp)"
+                                    }
+                                    if let jpy = rates["JPY"] as? Double {
+                                        self.lblJPY.text = "JPY: \(jpy)"
+                                    }
+                                    if let usd = rates["USD"] as? Double {
+                                        self.lblUSD.text = "USD: \(usd)"
+                                    }
+                                    if let turkish = rates["TRY"] as? Double {
+                                        self.lblTRY.text = "TRY: \(turkish)"
+                                    }
+                                
+                                }
+                                //print(jsonResponse["rates"])
                             }
                             
                         } catch {
