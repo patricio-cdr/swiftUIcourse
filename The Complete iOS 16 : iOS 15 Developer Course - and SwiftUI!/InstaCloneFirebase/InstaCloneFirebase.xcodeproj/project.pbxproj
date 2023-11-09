@@ -7,35 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1B8358232AFD56270076EC63 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8358222AFD56270076EC63 /* Coordinator.swift */; };
-		1B8358252AFD65310076EC63 /* ViewControllerProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8358242AFD65310076EC63 /* ViewControllerProvider.swift */; };
-		1B8358282AFD71020076EC63 /* ButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8358272AFD71020076EC63 /* ButtonViewController.swift */; };
-		1BA0A2C02A465EC800B7C34F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA0A2BF2A465EC800B7C34F /* AppDelegate.swift */; };
-		1BA0A2C22A465EC800B7C34F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA0A2C12A465EC800B7C34F /* SceneDelegate.swift */; };
-		1BA0A2C42A465EC800B7C34F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA0A2C32A465EC800B7C34F /* ViewController.swift */; };
-		1BA0A2C72A465EC800B7C34F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BA0A2C52A465EC800B7C34F /* Main.storyboard */; };
-		1BA0A2C92A465ECA00B7C34F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BA0A2C82A465ECA00B7C34F /* Assets.xcassets */; };
-		1BA0A2CC2A465ECA00B7C34F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BA0A2CA2A465ECA00B7C34F /* LaunchScreen.storyboard */; };
-		1BA0A2D42A4666D200B7C34F /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA0A2D32A4666D200B7C34F /* DetailsViewController.swift */; };
+		1B3B03702A9E622A00111966 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3B036F2A9E622A00111966 /* AppDelegate.swift */; };
+		1B3B03722A9E622A00111966 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3B03712A9E622A00111966 /* SceneDelegate.swift */; };
+		1B3B03742A9E622A00111966 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3B03732A9E622A00111966 /* ViewController.swift */; };
+		1B3B03772A9E622A00111966 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B3B03752A9E622A00111966 /* Main.storyboard */; };
+		1B3B03792A9E622F00111966 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B3B03782A9E622F00111966 /* Assets.xcassets */; };
+		1B3B037C2A9E622F00111966 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B3B037A2A9E622F00111966 /* LaunchScreen.storyboard */; };
+		1B3B03842A9E89EB00111966 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1B3B03832A9E89EA00111966 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1B8358222AFD56270076EC63 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
-		1B8358242AFD65310076EC63 /* ViewControllerProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerProvider.swift; sourceTree = "<group>"; };
-		1B8358272AFD71020076EC63 /* ButtonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonViewController.swift; sourceTree = "<group>"; };
-		1BA0A2BC2A465EC800B7C34F /* LandmarkBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LandmarkBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		1BA0A2BF2A465EC800B7C34F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1BA0A2C12A465EC800B7C34F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1BA0A2C32A465EC800B7C34F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		1BA0A2C62A465EC800B7C34F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		1BA0A2C82A465ECA00B7C34F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		1BA0A2CB2A465ECA00B7C34F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		1BA0A2CD2A465ECA00B7C34F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1BA0A2D32A4666D200B7C34F /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		1B3B036C2A9E622A00111966 /* InstaCloneFirebase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstaCloneFirebase.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B3B036F2A9E622A00111966 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1B3B03712A9E622A00111966 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		1B3B03732A9E622A00111966 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1B3B03762A9E622A00111966 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1B3B03782A9E622F00111966 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1B3B037B2A9E622F00111966 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1B3B037D2A9E622F00111966 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1B3B03832A9E89EA00111966 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		1BA0A2B92A465EC800B7C34F /* Frameworks */ = {
+		1B3B03692A9E622A00111966 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -45,84 +39,73 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1B8358262AFD70E00076EC63 /* Controllers */ = {
+		1B3B03632A9E622900111966 = {
 			isa = PBXGroup;
 			children = (
-				1BA0A2D32A4666D200B7C34F /* DetailsViewController.swift */,
-				1BA0A2C32A465EC800B7C34F /* ViewController.swift */,
-				1B8358272AFD71020076EC63 /* ButtonViewController.swift */,
-			);
-			path = Controllers;
-			sourceTree = "<group>";
-		};
-		1BA0A2B32A465EC800B7C34F = {
-			isa = PBXGroup;
-			children = (
-				1BA0A2BE2A465EC800B7C34F /* LandmarkBook */,
-				1BA0A2BD2A465EC800B7C34F /* Products */,
+				1B3B036E2A9E622A00111966 /* InstaCloneFirebase */,
+				1B3B036D2A9E622A00111966 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		1BA0A2BD2A465EC800B7C34F /* Products */ = {
+		1B3B036D2A9E622A00111966 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1BA0A2BC2A465EC800B7C34F /* LandmarkBook.app */,
+				1B3B036C2A9E622A00111966 /* InstaCloneFirebase.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		1BA0A2BE2A465EC800B7C34F /* LandmarkBook */ = {
+		1B3B036E2A9E622A00111966 /* InstaCloneFirebase */ = {
 			isa = PBXGroup;
 			children = (
-				1B8358262AFD70E00076EC63 /* Controllers */,
-				1BA0A2BF2A465EC800B7C34F /* AppDelegate.swift */,
-				1BA0A2C12A465EC800B7C34F /* SceneDelegate.swift */,
-				1BA0A2C52A465EC800B7C34F /* Main.storyboard */,
-				1BA0A2C82A465ECA00B7C34F /* Assets.xcassets */,
-				1BA0A2CA2A465ECA00B7C34F /* LaunchScreen.storyboard */,
-				1BA0A2CD2A465ECA00B7C34F /* Info.plist */,
-				1B8358222AFD56270076EC63 /* Coordinator.swift */,
-				1B8358242AFD65310076EC63 /* ViewControllerProvider.swift */,
+				1B3B036F2A9E622A00111966 /* AppDelegate.swift */,
+				1B3B03712A9E622A00111966 /* SceneDelegate.swift */,
+				1B3B03732A9E622A00111966 /* ViewController.swift */,
+				1B3B03752A9E622A00111966 /* Main.storyboard */,
+				1B3B03782A9E622F00111966 /* Assets.xcassets */,
+				1B3B037A2A9E622F00111966 /* LaunchScreen.storyboard */,
+				1B3B037D2A9E622F00111966 /* Info.plist */,
+				1B3B03832A9E89EA00111966 /* GoogleService-Info.plist */,
 			);
-			path = LandmarkBook;
+			path = InstaCloneFirebase;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1BA0A2BB2A465EC800B7C34F /* LandmarkBook */ = {
+		1B3B036B2A9E622A00111966 /* InstaCloneFirebase */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1BA0A2D02A465ECA00B7C34F /* Build configuration list for PBXNativeTarget "LandmarkBook" */;
+			buildConfigurationList = 1B3B03802A9E622F00111966 /* Build configuration list for PBXNativeTarget "InstaCloneFirebase" */;
 			buildPhases = (
-				1BA0A2B82A465EC800B7C34F /* Sources */,
-				1BA0A2B92A465EC800B7C34F /* Frameworks */,
-				1BA0A2BA2A465EC800B7C34F /* Resources */,
+				1B3B03682A9E622A00111966 /* Sources */,
+				1B3B03692A9E622A00111966 /* Frameworks */,
+				1B3B036A2A9E622A00111966 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = LandmarkBook;
-			productName = LandmarkBook;
-			productReference = 1BA0A2BC2A465EC800B7C34F /* LandmarkBook.app */;
+			name = InstaCloneFirebase;
+			productName = InstaCloneFirebase;
+			productReference = 1B3B036C2A9E622A00111966 /* InstaCloneFirebase.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		1BA0A2B42A465EC800B7C34F /* Project object */ = {
+		1B3B03642A9E622900111966 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1340;
 				LastUpgradeCheck = 1340;
 				TargetAttributes = {
-					1BA0A2BB2A465EC800B7C34F = {
+					1B3B036B2A9E622A00111966 = {
 						CreatedOnToolsVersion = 13.4.1;
 					};
 				};
 			};
-			buildConfigurationList = 1BA0A2B72A465EC800B7C34F /* Build configuration list for PBXProject "LandmarkBook" */;
+			buildConfigurationList = 1B3B03672A9E622900111966 /* Build configuration list for PBXProject "InstaCloneFirebase" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -130,59 +113,56 @@
 				en,
 				Base,
 			);
-			mainGroup = 1BA0A2B32A465EC800B7C34F;
-			productRefGroup = 1BA0A2BD2A465EC800B7C34F /* Products */;
+			mainGroup = 1B3B03632A9E622900111966;
+			productRefGroup = 1B3B036D2A9E622A00111966 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1BA0A2BB2A465EC800B7C34F /* LandmarkBook */,
+				1B3B036B2A9E622A00111966 /* InstaCloneFirebase */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		1BA0A2BA2A465EC800B7C34F /* Resources */ = {
+		1B3B036A2A9E622A00111966 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1BA0A2CC2A465ECA00B7C34F /* LaunchScreen.storyboard in Resources */,
-				1BA0A2C92A465ECA00B7C34F /* Assets.xcassets in Resources */,
-				1BA0A2C72A465EC800B7C34F /* Main.storyboard in Resources */,
+				1B3B037C2A9E622F00111966 /* LaunchScreen.storyboard in Resources */,
+				1B3B03842A9E89EB00111966 /* GoogleService-Info.plist in Resources */,
+				1B3B03792A9E622F00111966 /* Assets.xcassets in Resources */,
+				1B3B03772A9E622A00111966 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		1BA0A2B82A465EC800B7C34F /* Sources */ = {
+		1B3B03682A9E622A00111966 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1BA0A2C42A465EC800B7C34F /* ViewController.swift in Sources */,
-				1B8358282AFD71020076EC63 /* ButtonViewController.swift in Sources */,
-				1BA0A2C02A465EC800B7C34F /* AppDelegate.swift in Sources */,
-				1B8358232AFD56270076EC63 /* Coordinator.swift in Sources */,
-				1B8358252AFD65310076EC63 /* ViewControllerProvider.swift in Sources */,
-				1BA0A2C22A465EC800B7C34F /* SceneDelegate.swift in Sources */,
-				1BA0A2D42A4666D200B7C34F /* DetailsViewController.swift in Sources */,
+				1B3B03742A9E622A00111966 /* ViewController.swift in Sources */,
+				1B3B03702A9E622A00111966 /* AppDelegate.swift in Sources */,
+				1B3B03722A9E622A00111966 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		1BA0A2C52A465EC800B7C34F /* Main.storyboard */ = {
+		1B3B03752A9E622A00111966 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				1BA0A2C62A465EC800B7C34F /* Base */,
+				1B3B03762A9E622A00111966 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		1BA0A2CA2A465ECA00B7C34F /* LaunchScreen.storyboard */ = {
+		1B3B037A2A9E622F00111966 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				1BA0A2CB2A465ECA00B7C34F /* Base */,
+				1B3B037B2A9E622F00111966 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -190,7 +170,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		1BA0A2CE2A465ECA00B7C34F /* Debug */ = {
+		1B3B037E2A9E622F00111966 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -250,7 +230,7 @@
 			};
 			name = Debug;
 		};
-		1BA0A2CF2A465ECA00B7C34F /* Release */ = {
+		1B3B037F2A9E622F00111966 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -304,7 +284,7 @@
 			};
 			name = Release;
 		};
-		1BA0A2D12A465ECA00B7C34F /* Debug */ = {
+		1B3B03812A9E622F00111966 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -313,7 +293,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = U5Z5UA566F;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = LandmarkBook/Info.plist;
+				INFOPLIST_FILE = InstaCloneFirebase/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -324,7 +304,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.patrick.LandmarkBook;
+				PRODUCT_BUNDLE_IDENTIFIER = com.patrick.InstaCloneFirebase;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -332,7 +312,7 @@
 			};
 			name = Debug;
 		};
-		1BA0A2D22A465ECA00B7C34F /* Release */ = {
+		1B3B03822A9E622F00111966 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -341,7 +321,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = U5Z5UA566F;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = LandmarkBook/Info.plist;
+				INFOPLIST_FILE = InstaCloneFirebase/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -352,7 +332,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.patrick.LandmarkBook;
+				PRODUCT_BUNDLE_IDENTIFIER = com.patrick.InstaCloneFirebase;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -363,25 +343,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1BA0A2B72A465EC800B7C34F /* Build configuration list for PBXProject "LandmarkBook" */ = {
+		1B3B03672A9E622900111966 /* Build configuration list for PBXProject "InstaCloneFirebase" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1BA0A2CE2A465ECA00B7C34F /* Debug */,
-				1BA0A2CF2A465ECA00B7C34F /* Release */,
+				1B3B037E2A9E622F00111966 /* Debug */,
+				1B3B037F2A9E622F00111966 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1BA0A2D02A465ECA00B7C34F /* Build configuration list for PBXNativeTarget "LandmarkBook" */ = {
+		1B3B03802A9E622F00111966 /* Build configuration list for PBXNativeTarget "InstaCloneFirebase" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1BA0A2D12A465ECA00B7C34F /* Debug */,
-				1BA0A2D22A465ECA00B7C34F /* Release */,
+				1B3B03812A9E622F00111966 /* Debug */,
+				1B3B03822A9E622F00111966 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 1BA0A2B42A465EC800B7C34F /* Project object */;
+	rootObject = 1B3B03642A9E622900111966 /* Project object */;
 }

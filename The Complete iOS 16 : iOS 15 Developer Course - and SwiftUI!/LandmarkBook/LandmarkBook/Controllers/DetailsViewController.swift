@@ -8,6 +8,8 @@
 import UIKit
 
 class DetailsViewController: UIViewController {
+    
+    weak var mainCoordinator: MainCoordinator?
 
     @IBOutlet weak var lblLandmark: UILabel!
     @IBOutlet weak var imvLandmark: UIImageView!
@@ -22,17 +24,15 @@ class DetailsViewController: UIViewController {
 
         lblLandmark.text = selectedLandmarkName
         imvLandmark.image = selectedLandmarkImage
+        
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(imageViewTapped))
+        imvLandmark.isUserInteractionEnabled = true
+        imvLandmark.addGestureRecognizer(tapGesture)
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @objc func imageViewTapped() {
+        print("tapped")
+        mainCoordinator?.showButton()
     }
-    */
 
 }

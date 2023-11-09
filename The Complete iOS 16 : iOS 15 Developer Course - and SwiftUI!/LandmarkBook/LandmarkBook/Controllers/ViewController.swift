@@ -11,6 +11,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     @IBOutlet weak var tblView: UITableView!
     
+    weak var mainCoordinator: MainCoordinator?
     
     var landmarkNames = [String]()
     var landmarksImages = [UIImage]()
@@ -59,16 +60,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         chosenLandmarkName = landmarkNames[indexPath.row]
         chosenLandmarkImage = landmarksImages[indexPath.row]
-        performSegue(withIdentifier: "landmarkDetails", sender: nil)
-    }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "landmarkDetails" {
-            let destinationVC = segue.destination as! DetailsViewController
-            destinationVC.selectedLandmarkName = chosenLandmarkName
-            destinationVC.selectedLandmarkImage = chosenLandmarkImage
-            
-        }
+        
+        mainCoordinator?.showDetailsOf(landmarkName: chosenLandmarkName, landmarkImage: chosenLandmarkImage)
+        
     }
     
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
