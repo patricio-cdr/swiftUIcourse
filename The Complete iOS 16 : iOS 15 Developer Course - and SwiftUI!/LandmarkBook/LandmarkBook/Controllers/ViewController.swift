@@ -73,6 +73,13 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         }
     }
 
-
+    @IBAction func toDetailsVC(_ sender: Any) {
+        mainCoordinator?.showDetailsOf(landmarkName: "Details", landmarkImage: UIImage())
+    }
+    
+    @IBAction func toButtonsVC(_ sender: Any) {
+        mainCoordinator?.showButton()
+    }
+    
 }
 

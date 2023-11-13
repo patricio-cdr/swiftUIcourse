@@ -18,17 +18,37 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="wbu-hh-iZP">
-                                <rect key="frame" x="0.0" y="92" width="414" height="770"/>
+                                <rect key="frame" x="0.0" y="92" width="414" height="570"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8CX-XR-cjp">
+                                <rect key="frame" x="230.5" y="714" width="102.5" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="to buttons"/>
+                                <connections>
+                                    <action selector="toButtonsVC:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iUa-Pd-Qrk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0LV-J4-zH0">
+                                <rect key="frame" x="78" y="714" width="94" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="to details"/>
+                                <connections>
+                                    <action selector="toDetailsVC:" destination="BYZ-38-t0r" eventType="touchUpInside" id="McO-KS-uKS"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="0LV-J4-zH0" firstAttribute="baseline" secondItem="8CX-XR-cjp" secondAttribute="baseline" id="2oD-HQ-gNZ"/>
+                            <constraint firstItem="0LV-J4-zH0" firstAttribute="top" secondItem="wbu-hh-iZP" secondAttribute="bottom" constant="52" id="FC0-T3-z2h"/>
+                            <constraint firstItem="0LV-J4-zH0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="78" id="Oh5-B7-5Gc"/>
                             <constraint firstItem="wbu-hh-iZP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="f1w-EB-nr5"/>
                             <constraint firstItem="wbu-hh-iZP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="fjG-it-g6A"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8CX-XR-cjp" secondAttribute="trailing" constant="81" id="leY-7J-FyD"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wbu-hh-iZP" secondAttribute="trailing" id="q7f-Ha-noQ"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="wbu-hh-iZP" secondAttribute="bottom" id="qA7-Ut-ya3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="wbu-hh-iZP" secondAttribute="bottom" constant="200" id="qA7-Ut-ya3"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="PTp-Tc-kfR"/>
@@ -122,7 +142,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yao-Jx-EKx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3024.6376811594205" y="377.67857142857139"/>
+            <point key="canvasLocation" x="2835" y="80"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Yyl-Zy-0lK">
